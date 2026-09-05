@@ -7,61 +7,61 @@
           "row_idx": 0,
           "col_idx": 1,
           "color_code": "#D9E1F2",
-          "interpretation": "Higher"
+          "interpretation": "Average vulnerability"
         },
         {
           "row_idx": 0,
           "col_idx": 2,
           "color_code": "#47C09F",
-          "interpretation": "Average"
+          "interpretation": "Unresolved between Lower vulnerability and Average vulnerability"
         },
         {
           "row_idx": 1,
           "col_idx": 1,
           "color_code": "#D9E1F2",
-          "interpretation": "Higher"
+          "interpretation": "Average vulnerability"
         },
         {
           "row_idx": 1,
           "col_idx": 2,
           "color_code": "#D9E1F2",
-          "interpretation": "Higher"
+          "interpretation": "Average vulnerability"
         },
         {
           "row_idx": 2,
           "col_idx": 1,
           "color_code": "#D9E1F2",
-          "interpretation": "Higher"
+          "interpretation": "Average vulnerability"
         },
         {
           "row_idx": 2,
           "col_idx": 2,
           "color_code": "#47C09F",
-          "interpretation": "Average"
+          "interpretation": "Unresolved between Lower vulnerability and Average vulnerability"
         },
         {
           "row_idx": 3,
           "col_idx": 1,
           "color_code": "#47C09F",
-          "interpretation": "Average"
+          "interpretation": "Unresolved between Lower vulnerability and Average vulnerability"
         },
         {
           "row_idx": 3,
           "col_idx": 2,
           "color_code": "#008080",
-          "interpretation": "Average"
+          "interpretation": "Lower vulnerability"
         },
         {
           "row_idx": 4,
           "col_idx": 1,
           "color_code": "#EF8369",
-          "interpretation": "Higher"
+          "interpretation": "Unresolved between Average vulnerability and Higher vulnerability"
         },
         {
           "row_idx": 4,
           "col_idx": 2,
           "color_code": "#D9E1F2",
-          "interpretation": "Higher"
+          "interpretation": "Average vulnerability"
         }
       ],
       "title": "(FVI)11 level",
@@ -74,35 +74,23 @@
       "legend": [
         {
           "color_code": "#008080",
-          "interpretation": "FVI level quintiles"
-        },
-        {
-          "color_code": "#008080",
-          "interpretation": "Average"
+          "interpretation": "Lower vulnerability"
         },
         {
           "color_code": "#47C09F",
-          "interpretation": "FVI level quintiles"
-        },
-        {
-          "color_code": "#47C09F",
-          "interpretation": "Average"
+          "interpretation": "Unresolved between Lower vulnerability and Average vulnerability"
         },
         {
           "color_code": "#D9E1F2",
-          "interpretation": "Higher"
-        },
-        {
-          "color_code": "#D9E1F2",
-          "interpretation": "Higher"
+          "interpretation": "Average vulnerability"
         },
         {
           "color_code": "#EF8369",
-          "interpretation": "Higher"
+          "interpretation": "Unresolved between Average vulnerability and Higher vulnerability"
         },
         {
-          "color_code": "#EF8369",
-          "interpretation": "Higher"
+          "color_code": "#DA3031",
+          "interpretation": "Higher vulnerability"
         }
       ]
     },
@@ -113,49 +101,49 @@
           "row_idx": 0,
           "col_idx": 1,
           "color_code": "#47C09F",
-          "interpretation": "Average"
+          "interpretation": "Unresolved between Lower vulnerability and Average vulnerability"
         },
         {
           "row_idx": 0,
           "col_idx": 2,
           "color_code": "#47C09F",
-          "interpretation": "Average"
+          "interpretation": "Unresolved between Lower vulnerability and Average vulnerability"
         },
         {
           "row_idx": 1,
           "col_idx": 1,
           "color_code": "#008080",
-          "interpretation": "Average"
+          "interpretation": "Lower vulnerability"
         },
         {
           "row_idx": 1,
           "col_idx": 2,
           "color_code": "#47C09F",
-          "interpretation": "Average"
+          "interpretation": "Unresolved between Lower vulnerability and Average vulnerability"
         },
         {
           "row_idx": 2,
           "col_idx": 1,
           "color_code": "#47C09F",
-          "interpretation": "Average"
+          "interpretation": "Unresolved between Lower vulnerability and Average vulnerability"
         },
         {
           "row_idx": 2,
           "col_idx": 2,
           "color_code": "#47C09F",
-          "interpretation": "Average"
+          "interpretation": "Unresolved between Lower vulnerability and Average vulnerability"
         },
         {
           "row_idx": 3,
           "col_idx": 1,
           "color_code": "#D9E1F2",
-          "interpretation": "Higher"
+          "interpretation": "Average vulnerability"
         },
         {
           "row_idx": 3,
           "col_idx": 2,
           "color_code": "#47C09F",
-          "interpretation": "Average"
+          "interpretation": "Unresolved between Lower vulnerability and Average vulnerability"
         }
       ],
       "title": "FVI17",
@@ -168,35 +156,23 @@
       "legend": [
         {
           "color_code": "#008080",
-          "interpretation": "FVI level quintiles"
-        },
-        {
-          "color_code": "#008080",
-          "interpretation": "Average"
+          "interpretation": "Lower vulnerability"
         },
         {
           "color_code": "#47C09F",
-          "interpretation": "FVI level quintiles"
-        },
-        {
-          "color_code": "#47C09F",
-          "interpretation": "Average"
+          "interpretation": "Unresolved between Lower vulnerability and Average vulnerability"
         },
         {
           "color_code": "#D9E1F2",
-          "interpretation": "Higher"
-        },
-        {
-          "color_code": "#D9E1F2",
-          "interpretation": "Higher"
+          "interpretation": "Average vulnerability"
         },
         {
           "color_code": "#EF8369",
-          "interpretation": "Higher"
+          "interpretation": "Unresolved between Average vulnerability and Higher vulnerability"
         },
         {
-          "color_code": "#EF8369",
-          "interpretation": "Higher"
+          "color_code": "#DA3031",
+          "interpretation": "Higher vulnerability"
         }
       ]
     },
@@ -207,61 +183,61 @@
           "row_idx": 0,
           "col_idx": 1,
           "color_code": "#47C09F",
-          "interpretation": "Average"
+          "interpretation": "Unresolved between Lower Vulnerability and Average Vulnerability"
         },
         {
           "row_idx": 0,
           "col_idx": 2,
           "color_code": "#008080",
-          "interpretation": "Average"
+          "interpretation": "Lower Vulnerability"
         },
         {
           "row_idx": 1,
           "col_idx": 1,
           "color_code": "#47C09F",
-          "interpretation": "Average"
+          "interpretation": "Unresolved between Lower Vulnerability and Average Vulnerability"
         },
         {
           "row_idx": 1,
           "col_idx": 2,
           "color_code": "#47C09F",
-          "interpretation": "Average"
+          "interpretation": "Unresolved between Lower Vulnerability and Average Vulnerability"
         },
         {
           "row_idx": 2,
           "col_idx": 1,
           "color_code": "#D9E1F2",
-          "interpretation": "Higher"
+          "interpretation": "Average Vulnerability"
         },
         {
           "row_idx": 2,
           "col_idx": 2,
           "color_code": "#47C09F",
-          "interpretation": "Average"
+          "interpretation": "Unresolved between Lower Vulnerability and Average Vulnerability"
         },
         {
           "row_idx": 3,
           "col_idx": 1,
           "color_code": "#47C09F",
-          "interpretation": "Average"
+          "interpretation": "Unresolved between Lower Vulnerability and Average Vulnerability"
         },
         {
           "row_idx": 3,
           "col_idx": 2,
           "color_code": "#008080",
-          "interpretation": "Average"
+          "interpretation": "Lower Vulnerability"
         },
         {
           "row_idx": 4,
           "col_idx": 1,
           "color_code": "#47C09F",
-          "interpretation": "Average"
+          "interpretation": "Unresolved between Lower Vulnerability and Average Vulnerability"
         },
         {
           "row_idx": 4,
           "col_idx": 2,
           "color_code": "#47C09F",
-          "interpretation": "Average"
+          "interpretation": "Unresolved between Lower Vulnerability and Average Vulnerability"
         }
       ],
       "title": "FVI23",
@@ -274,35 +250,23 @@
       "legend": [
         {
           "color_code": "#008080",
-          "interpretation": "Average"
-        },
-        {
-          "color_code": "#008080",
-          "interpretation": "Average"
+          "interpretation": "Lower Vulnerability"
         },
         {
           "color_code": "#47C09F",
-          "interpretation": "Average"
-        },
-        {
-          "color_code": "#47C09F",
-          "interpretation": "Average"
+          "interpretation": "Unresolved between Lower Vulnerability and Average Vulnerability"
         },
         {
           "color_code": "#D9E1F2",
-          "interpretation": "Higher"
-        },
-        {
-          "color_code": "#D9E1F2",
-          "interpretation": "Higher"
+          "interpretation": "Average Vulnerability"
         },
         {
           "color_code": "#EF8369",
-          "interpretation": "Higher"
+          "interpretation": "Unresolved between Average Vulnerability and Higher Vulnerability"
         },
         {
-          "color_code": "#EF8369",
-          "interpretation": "Higher"
+          "color_code": "#DA3031",
+          "interpretation": "Higher Vulnerability"
         }
       ]
     }

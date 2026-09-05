@@ -7,13 +7,19 @@
           "row_idx": 0,
           "col_idx": 1,
           "color_code": "#D9E1F2",
-          "interpretation": "Increased"
+          "interpretation": "Broadly Unchanged"
         },
         {
           "row_idx": 1,
           "col_idx": 1,
+          "color_code": "#F4B083",
+          "interpretation": "Unresolved between Broadly Unchanged and Increased significantly"
+        },
+        {
+          "row_idx": 2,
+          "col_idx": 1,
           "color_code": "#D9E1F2",
-          "interpretation": "Increased"
+          "interpretation": "Broadly Unchanged"
         }
       ],
       "title": "Sector",
@@ -26,27 +32,23 @@
       "legend": [
         {
           "color_code": "#008080",
-          "interpretation": "y-o-y Changes in FVI"
-        },
-        {
-          "color_code": "#008080",
-          "interpretation": "y-o-y Changes in FVI"
+          "interpretation": "Decreased significantly"
         },
         {
           "color_code": "#47C09F",
-          "interpretation": "Broadly"
-        },
-        {
-          "color_code": "#47C09F",
-          "interpretation": "Broadly"
+          "interpretation": "Unresolved between Decreased significantly and Broadly Unchanged"
         },
         {
           "color_code": "#D9E1F2",
-          "interpretation": "Increased"
+          "interpretation": "Broadly Unchanged"
         },
         {
-          "color_code": "#D9E1F2",
-          "interpretation": "Increased"
+          "color_code": "#EF8369",
+          "interpretation": "Unresolved between Broadly Unchanged and Increased significantly"
+        },
+        {
+          "color_code": "#DA3031",
+          "interpretation": "Increased significantly"
         }
       ]
     }

@@ -72,6 +72,12 @@ and permits alternative PDF parsers. The default file API uses pdfplumber
 colours. Scanned/raster-only tables and fills drawn as non-rectangular paths
 require OCR/vectorisation or a specialised adapter before calling the engine.
 
+Rows use zero-based physical table order and data columns use the existing
+one-based convention (the row-label column is column zero and is not emitted).
+Coordinates are determined from the blank-cell grid before facts with an
+unsupported colour are omitted, so gaps are preserved rather than shifting a
+later row or column.
+
 ## JSON output
 
 Output is written beside the input as `<pdf_stem>_color_code.json`; for example,
@@ -104,6 +110,12 @@ JSON preserves the complete extraction object and its existing field names:
 An empty extraction is `{"items": []}` (formatted across multiple lines in
 the file). Output replacement is atomic and occurs only after extraction and
 serialization succeed. The source PDF is never changed.
+
+The `interpretation` field retains its existing name and string type. For a
+legend band without its own source label, it is explicitly written as
+`Unresolved` (with source-supported neighbouring labels where available),
+rather than borrowing the nearest label and presenting it as exact. The same
+rule applies to `facts` and `legend`; no new schema field is required.
 
 ## Development
 
