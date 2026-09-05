@@ -124,6 +124,6 @@ def extract_from_pages(pages: list[Page], *, color_tolerance: float = 18) -> Doc
 
 def extract_color_coded_facts(path: str | Path, *, color_tolerance: float = 18) -> DocumentColorCodeExtraction:
     """Extract colour-coded table facts from a PDF file."""
-    from .pymupdf_backend import read_pages
+    from .pdfplumber_backend import read_pages
 
     return extract_from_pages(read_pages(path), color_tolerance=color_tolerance)
