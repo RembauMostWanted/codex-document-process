@@ -37,3 +37,39 @@ def test_rejects_cell_containing_text():
         fills=[FilledRectangle(box(120, 100), teal), FilledRectangle(box(120, 120), red),
                FilledRectangle(box(400, 600), teal), FilledRectangle(box(400, 620), red)])
     assert extract_from_pages([page]).items == []
+
+
+def test_deduplicates_nested_cell_rectangles_and_rejects_chart_bars():
+    teal, red = (0, 90, 90), (190, 30, 30)
+    page = Page(1, 600, 800,
+        texts=[TextSpan("A", box(40, 100)), TextSpan("B", box(40, 120)),
+               TextSpan("low", box(430, 600)), TextSpan("high", box(430, 620))],
+        fills=[FilledRectangle(box(120, 100, 40), teal),
+               FilledRectangle(box(124, 102, 32, 8), teal),
+               FilledRectangle(box(120, 120, 40), red),
+               FilledRectangle(box(124, 122, 32, 8), red),
+               # Aligned chart bars share legend colours but are not cells.
+               FilledRectangle(box(250, 100, 5, 50), teal),
+               FilledRectangle(box(260, 100, 5, 70), red),
+               FilledRectangle(box(400, 600), teal),
+               FilledRectangle(box(400, 620), red)])
+
+    result = extract_from_pages([page])
+
+    assert len(result.items) == 1
+    assert [(fact.row_idx, fact.col_idx) for fact in result.items[0].facts] == [
+        (0, 1), (1, 1)
+    ]
+
+
+def test_rejects_monochrome_table_shading_mistaken_for_a_legend():
+    gray = (220, 220, 220)
+    page = Page(1, 600, 800,
+        texts=[TextSpan("Row A", box(40, 100)), TextSpan("Row B", box(40, 120)),
+               TextSpan("Full", box(430, 600)), TextSpan("Partial", box(430, 620))],
+        fills=[FilledRectangle(box(120, 100, 40), gray),
+               FilledRectangle(box(120, 120, 40), gray),
+               FilledRectangle(box(400, 600), gray),
+               FilledRectangle(box(400, 620), gray)])
+
+    assert extract_from_pages([page]).items == []

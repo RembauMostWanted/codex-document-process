@@ -1,0 +1,310 @@
+{
+  "items": [
+    {
+      "page_number": 20,
+      "facts": [
+        {
+          "row_idx": 0,
+          "col_idx": 1,
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 0,
+          "col_idx": 2,
+          "color_code": "#EF8369",
+          "interpretation": "Higher"
+        },
+        {
+          "row_idx": 1,
+          "col_idx": 1,
+          "color_code": "#D9E1F2",
+          "interpretation": "Higher"
+        },
+        {
+          "row_idx": 1,
+          "col_idx": 2,
+          "color_code": "#EF8369",
+          "interpretation": "Higher"
+        },
+        {
+          "row_idx": 2,
+          "col_idx": 1,
+          "color_code": "#008080",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 2,
+          "col_idx": 2,
+          "color_code": "#D9E1F2",
+          "interpretation": "Higher"
+        },
+        {
+          "row_idx": 3,
+          "col_idx": 1,
+          "color_code": "#008080",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 3,
+          "col_idx": 2,
+          "color_code": "#D9E1F2",
+          "interpretation": "Higher"
+        },
+        {
+          "row_idx": 4,
+          "col_idx": 1,
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 4,
+          "col_idx": 2,
+          "color_code": "#EF8369",
+          "interpretation": "Higher"
+        }
+      ],
+      "title": "FVI8",
+      "bbox": {
+        "x0": 315.07,
+        "y0": 448.03,
+        "x1": 512.854,
+        "y1": 546.43
+      },
+      "legend": [
+        {
+          "color_code": "#008080",
+          "interpretation": "FVI level quintiles"
+        },
+        {
+          "color_code": "#008080",
+          "interpretation": "Average"
+        },
+        {
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "color_code": "#D9E1F2",
+          "interpretation": "Higher"
+        },
+        {
+          "color_code": "#D9E1F2",
+          "interpretation": "Higher"
+        },
+        {
+          "color_code": "#EF8369",
+          "interpretation": "Higher"
+        },
+        {
+          "color_code": "#EF8369",
+          "interpretation": "Higher"
+        }
+      ]
+    },
+    {
+      "page_number": 28,
+      "facts": [
+        {
+          "row_idx": 0,
+          "col_idx": 1,
+          "color_code": "#008080",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 0,
+          "col_idx": 2,
+          "color_code": "#008080",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 1,
+          "col_idx": 1,
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 1,
+          "col_idx": 2,
+          "color_code": "#008080",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 2,
+          "col_idx": 1,
+          "color_code": "#008080",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 2,
+          "col_idx": 2,
+          "color_code": "#008080",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 3,
+          "col_idx": 1,
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 3,
+          "col_idx": 2,
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        }
+      ],
+      "title": "FVI18",
+      "bbox": {
+        "x0": 315.07,
+        "y0": 374.80999999999995,
+        "x1": 508.294,
+        "y1": 454.27
+      },
+      "legend": [
+        {
+          "color_code": "#008080",
+          "interpretation": "FVI level quintiles"
+        },
+        {
+          "color_code": "#008080",
+          "interpretation": "Average"
+        },
+        {
+          "color_code": "#47C09F",
+          "interpretation": "FVI level quintiles"
+        },
+        {
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "color_code": "#D9E1F2",
+          "interpretation": "Higher"
+        },
+        {
+          "color_code": "#D9E1F2",
+          "interpretation": "Higher"
+        },
+        {
+          "color_code": "#EF8369",
+          "interpretation": "Higher"
+        },
+        {
+          "color_code": "#EF8369",
+          "interpretation": "Higher"
+        }
+      ]
+    },
+    {
+      "page_number": 36,
+      "facts": [
+        {
+          "row_idx": 0,
+          "col_idx": 1,
+          "color_code": "#008080",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 0,
+          "col_idx": 2,
+          "color_code": "#008080",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 1,
+          "col_idx": 1,
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 1,
+          "col_idx": 2,
+          "color_code": "#008080",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 2,
+          "col_idx": 1,
+          "color_code": "#D9E1F2",
+          "interpretation": "Higher"
+        },
+        {
+          "row_idx": 2,
+          "col_idx": 2,
+          "color_code": "#008080",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 3,
+          "col_idx": 1,
+          "color_code": "#008080",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 3,
+          "col_idx": 2,
+          "color_code": "#008080",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 4,
+          "col_idx": 1,
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 4,
+          "col_idx": 2,
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        }
+      ],
+      "title": "Banking sector FVI level",
+      "bbox": {
+        "x0": 319.39,
+        "y0": 609.6759999999999,
+        "x1": 511.894,
+        "y1": 699.0999999999999
+      },
+      "legend": [
+        {
+          "color_code": "#008080",
+          "interpretation": "Average"
+        },
+        {
+          "color_code": "#008080",
+          "interpretation": "Average"
+        },
+        {
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "color_code": "#D9E1F2",
+          "interpretation": "Higher"
+        },
+        {
+          "color_code": "#D9E1F2",
+          "interpretation": "Higher"
+        },
+        {
+          "color_code": "#EF8369",
+          "interpretation": "Higher"
+        },
+        {
+          "color_code": "#EF8369",
+          "interpretation": "Higher"
+        }
+      ]
+    }
+  ]
+}
