@@ -8,11 +8,13 @@ from .models import (
     DocumentColorCodeExtraction,
     LegendEntry,
 )
+from .runner import ColorCodeRunner
 
 __all__ = [
     "BoundingBox",
     "ColorCodedFact",
     "ColorCodedTable",
+    "ColorCodeRunner",
     "DocumentColorCodeExtraction",
     "LegendEntry",
     "extract_color_coded_facts",
