@@ -49,6 +49,28 @@ def _legends(page: Page) -> list[tuple[FilledRectangle, TextSpan]]:
     return usable
 
 
+def _deduplicate_fills(fills: list[FilledRectangle]) -> list[FilledRectangle]:
+    """Collapse the nested rectangles emitted by some PDF authoring tools.
+
+    MAS reports commonly draw the same cell twice (an outer rectangle and an
+    inset rectangle with the identical colour).  Treating both as independent
+    cells doubles facts and can manufacture extra rows and columns.
+    """
+    unique: list[FilledRectangle] = []
+    area = lambda box: (box.x1 - box.x0) * (box.y1 - box.y0)
+    for fill in sorted(fills, key=lambda item: -area(item.bbox)):
+        if any(
+            fill.rgb == existing.rgb
+            and _overlaps(fill.bbox, existing.bbox)
+            and min(area(fill.bbox), area(existing.bbox))
+            / max(area(fill.bbox), area(existing.bbox)) >= 0.45
+            for existing in unique
+        ):
+            continue
+        unique.append(fill)
+    return unique
+
+
 def _cluster(fills: list[FilledRectangle]) -> list[list[FilledRectangle]]:
     groups: list[list[FilledRectangle]] = []
     remaining = set(range(len(fills)))
@@ -94,12 +116,22 @@ def extract_from_pages(pages: list[Page], *, color_tolerance: float = 18) -> Doc
     result = DocumentColorCodeExtraction()
     for page in pages:
         legend_pairs = _legends(page)
-        if len({entry[1].text.casefold() for entry in legend_pairs}) < 2:
+        if (
+            len({entry[1].text.casefold() for entry in legend_pairs}) < 2
+            or len({entry[0].rgb for entry in legend_pairs}) < 2
+        ):
             continue
         swatches = {id(fill) for fill, _ in legend_pairs}
         candidates = []
         meanings: dict[int, str] = {}
         for fill in page.fills:
+            # Colour-coded table cells must have enough area to contain data.
+            # This rejects the narrow bars and line fragments in ordinary
+            # charts, which otherwise look like hundreds of blank cells.
+            if fill.bbox.x1 - fill.bbox.x0 < 20 or fill.bbox.y1 - fill.bbox.y0 < 8:
+                continue
+            if min(fill.rgb) >= 245:
+                continue
             if id(fill) in swatches or any(_overlaps(fill.bbox, text.bbox) for text in page.texts):
                 continue
             matches = [( _distance(fill.rgb, key.rgb), label.text) for key, label in legend_pairs]
@@ -107,7 +139,14 @@ def extract_from_pages(pages: list[Page], *, color_tolerance: float = 18) -> Doc
             if distance <= color_tolerance:
                 meanings[id(fill)] = meaning
                 candidates.append(fill)
+        candidates = _deduplicate_fills(candidates)
         for group in _cluster(candidates):
+            # A sizeable single-colour run is normally zebra-striping or
+            # column shading, not values encoded by colour. Two-cell runs are
+            # retained because small dashboards can legitimately repeat one
+            # category (as in the 2020 MAS overview).
+            if len(group) > 2 and len({fill.rgb for fill in group}) == 1:
+                continue
             xs = _ranks([f.bbox.x0 for f in group])
             ys = _ranks([f.bbox.y0 for f in group])
             box = BoundingBox(min(f.bbox.x0 for f in group), min(f.bbox.y0 for f in group), max(f.bbox.x1 for f in group), max(f.bbox.y1 for f in group))

@@ -1,0 +1,310 @@
+{
+  "items": [
+    {
+      "page_number": 28,
+      "facts": [
+        {
+          "row_idx": 0,
+          "col_idx": 1,
+          "color_code": "#D9E1F2",
+          "interpretation": "Higher"
+        },
+        {
+          "row_idx": 0,
+          "col_idx": 2,
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 1,
+          "col_idx": 1,
+          "color_code": "#D9E1F2",
+          "interpretation": "Higher"
+        },
+        {
+          "row_idx": 1,
+          "col_idx": 2,
+          "color_code": "#D9E1F2",
+          "interpretation": "Higher"
+        },
+        {
+          "row_idx": 2,
+          "col_idx": 1,
+          "color_code": "#D9E1F2",
+          "interpretation": "Higher"
+        },
+        {
+          "row_idx": 2,
+          "col_idx": 2,
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 3,
+          "col_idx": 1,
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 3,
+          "col_idx": 2,
+          "color_code": "#008080",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 4,
+          "col_idx": 1,
+          "color_code": "#EF8369",
+          "interpretation": "Higher"
+        },
+        {
+          "row_idx": 4,
+          "col_idx": 2,
+          "color_code": "#D9E1F2",
+          "interpretation": "Higher"
+        }
+      ],
+      "title": "(FVI)11 level",
+      "bbox": {
+        "x0": 325.25,
+        "y0": 205.45999999999992,
+        "x1": 522.934,
+        "y1": 303.16999999999996
+      },
+      "legend": [
+        {
+          "color_code": "#008080",
+          "interpretation": "FVI level quintiles"
+        },
+        {
+          "color_code": "#008080",
+          "interpretation": "Average"
+        },
+        {
+          "color_code": "#47C09F",
+          "interpretation": "FVI level quintiles"
+        },
+        {
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "color_code": "#D9E1F2",
+          "interpretation": "Higher"
+        },
+        {
+          "color_code": "#D9E1F2",
+          "interpretation": "Higher"
+        },
+        {
+          "color_code": "#EF8369",
+          "interpretation": "Higher"
+        },
+        {
+          "color_code": "#EF8369",
+          "interpretation": "Higher"
+        }
+      ]
+    },
+    {
+      "page_number": 34,
+      "facts": [
+        {
+          "row_idx": 0,
+          "col_idx": 1,
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 0,
+          "col_idx": 2,
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 1,
+          "col_idx": 1,
+          "color_code": "#008080",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 1,
+          "col_idx": 2,
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 2,
+          "col_idx": 1,
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 2,
+          "col_idx": 2,
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 3,
+          "col_idx": 1,
+          "color_code": "#D9E1F2",
+          "interpretation": "Higher"
+        },
+        {
+          "row_idx": 3,
+          "col_idx": 2,
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        }
+      ],
+      "title": "FVI17",
+      "bbox": {
+        "x0": 329.81,
+        "y0": 191.05999999999995,
+        "x1": 523.054,
+        "y1": 270.02
+      },
+      "legend": [
+        {
+          "color_code": "#008080",
+          "interpretation": "FVI level quintiles"
+        },
+        {
+          "color_code": "#008080",
+          "interpretation": "Average"
+        },
+        {
+          "color_code": "#47C09F",
+          "interpretation": "FVI level quintiles"
+        },
+        {
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "color_code": "#D9E1F2",
+          "interpretation": "Higher"
+        },
+        {
+          "color_code": "#D9E1F2",
+          "interpretation": "Higher"
+        },
+        {
+          "color_code": "#EF8369",
+          "interpretation": "Higher"
+        },
+        {
+          "color_code": "#EF8369",
+          "interpretation": "Higher"
+        }
+      ]
+    },
+    {
+      "page_number": 39,
+      "facts": [
+        {
+          "row_idx": 0,
+          "col_idx": 1,
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 0,
+          "col_idx": 2,
+          "color_code": "#008080",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 1,
+          "col_idx": 1,
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 1,
+          "col_idx": 2,
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 2,
+          "col_idx": 1,
+          "color_code": "#D9E1F2",
+          "interpretation": "Higher"
+        },
+        {
+          "row_idx": 2,
+          "col_idx": 2,
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 3,
+          "col_idx": 1,
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 3,
+          "col_idx": 2,
+          "color_code": "#008080",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 4,
+          "col_idx": 1,
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "row_idx": 4,
+          "col_idx": 2,
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        }
+      ],
+      "title": "FVI23",
+      "bbox": {
+        "x0": 330.91,
+        "y0": 191.05999999999995,
+        "x1": 523.414,
+        "y1": 279.89
+      },
+      "legend": [
+        {
+          "color_code": "#008080",
+          "interpretation": "Average"
+        },
+        {
+          "color_code": "#008080",
+          "interpretation": "Average"
+        },
+        {
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "color_code": "#47C09F",
+          "interpretation": "Average"
+        },
+        {
+          "color_code": "#D9E1F2",
+          "interpretation": "Higher"
+        },
+        {
+          "color_code": "#D9E1F2",
+          "interpretation": "Higher"
+        },
+        {
+          "color_code": "#EF8369",
+          "interpretation": "Higher"
+        },
+        {
+          "color_code": "#EF8369",
+          "interpretation": "Higher"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "items": [
+    {
+      "page_number": 9,
+      "facts": [
+        {
+          "row_idx": 0,
+          "col_idx": 1,
+          "color_code": "#D9E1F2",
+          "interpretation": "Increased"
+        },
+        {
+          "row_idx": 1,
+          "col_idx": 1,
+          "color_code": "#D9E1F2",
+          "interpretation": "Increased"
+        }
+      ],
+      "title": "Sector",
+      "bbox": {
+        "x0": 383.95,
+        "y0": 587.1099999999999,
+        "x1": 503.96999999999997,
+        "y1": 628.39
+      },
+      "legend": [
+        {
+          "color_code": "#008080",
+          "interpretation": "y-o-y Changes in FVI"
+        },
+        {
+          "color_code": "#008080",
+          "interpretation": "y-o-y Changes in FVI"
+        },
+        {
+          "color_code": "#47C09F",
+          "interpretation": "Broadly"
+        },
+        {
+          "color_code": "#47C09F",
+          "interpretation": "Broadly"
+        },
+        {
+          "color_code": "#D9E1F2",
+          "interpretation": "Increased"
+        },
+        {
+          "color_code": "#D9E1F2",
+          "interpretation": "Increased"
+        }
+      ]
+    }
+  ]
+}
