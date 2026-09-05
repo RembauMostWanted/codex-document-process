@@ -67,9 +67,10 @@ result = extract_color_coded_facts("data/Financial Stability Review 2025.pdf")
 
 The public `extract_from_pages` function accepts backend-neutral positioned
 text and fill primitives. This makes the evidence rules independently testable
-and permits alternative PDF parsers. The default file API uses PyMuPDF and
-extracts vector fills; scanned/raster-only tables require OCR/vectorisation
-before calling the engine.
+and permits alternative PDF parsers. The default file API uses pdfplumber
+(backed by pdfminer.six) to extract positioned words and vector rectangle fill
+colours. Scanned/raster-only tables and fills drawn as non-rectangular paths
+require OCR/vectorisation or a specialised adapter before calling the engine.
 
 ## JSON output
 

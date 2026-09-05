@@ -1,7 +1,6 @@
 import json
 from pathlib import Path
 
-import fitz
 from typer.testing import CliRunner
 
 import cli.__main__ as cli_module
@@ -96,25 +95,28 @@ def test_directory_continues_after_failure_and_exits_nonzero(monkeypatch, tmp_pa
     assert "1 of 3 PDF(s) failed" in result.output
 
 
-def test_real_pdf_exercises_backend_runner_and_cli(tmp_path):
+def test_file_mode_exercises_runner_and_cli(monkeypatch, tmp_path):
     pdf = tmp_path / "generated.pdf"
-    document = fitz.open()
-    page = document.new_page(width=600, height=800)
     teal = (0, 90 / 255, 90 / 255)
     red = (190 / 255, 30 / 255, 30 / 255)
-    page.insert_text((40, 95), "Risk dashboard")
-    page.insert_text((40, 113), "Metric A")
-    page.insert_text((40, 133), "Metric B")
-    for rect, colour in [
-        (fitz.Rect(120, 100, 140, 112), teal), (fitz.Rect(160, 100, 180, 112), red),
-        (fitz.Rect(120, 120, 140, 132), red), (fitz.Rect(160, 120, 180, 132), teal),
-        (fitz.Rect(400, 600, 420, 612), teal), (fitz.Rect(400, 620, 420, 632), red),
-    ]:
-        page.draw_rect(rect, fill=colour, color=None)
-    page.insert_text((430, 610), "Lower vulnerability")
-    page.insert_text((430, 630), "Higher vulnerability")
-    document.save(pdf)
-    document.close()
+    pdf.touch()
+    from pdf_color_facts.primitives import FilledRectangle, Page, TextSpan
+    from pdf_color_facts import BoundingBox
+
+    def box(x, y, w=20, h=12):
+        return BoundingBox(x, y, x + w, y + h)
+
+    page = Page(1, 600, 800,
+        texts=[TextSpan("Risk dashboard", box(40, 80)), TextSpan("Metric A", box(40, 100)),
+               TextSpan("Metric B", box(40, 120)), TextSpan("Lower vulnerability", box(430, 600, 110)),
+               TextSpan("Higher vulnerability", box(430, 620, 110))],
+        fills=[FilledRectangle(box(120, 100), tuple(round(x * 255) for x in teal)),
+               FilledRectangle(box(160, 100), tuple(round(x * 255) for x in red)),
+               FilledRectangle(box(120, 120), tuple(round(x * 255) for x in red)),
+               FilledRectangle(box(160, 120), tuple(round(x * 255) for x in teal)),
+               FilledRectangle(box(400, 600), tuple(round(x * 255) for x in teal)),
+               FilledRectangle(box(400, 620), tuple(round(x * 255) for x in red))])
+    monkeypatch.setattr("pdf_color_facts.pdfplumber_backend.read_pages", lambda path: [page])
 
     result = cli.invoke(cli_module.app, ["--fpath", str(pdf)])
 
